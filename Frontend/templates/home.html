@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Django Application</h1>
+
+    {% if role == "admin" %}
+    <h2>welcome {{name}}</h2>
+    {% endif %}
+
+    {% for i in numbers %}
+    {{i}}
+    {% endfor %}
+
+{% endblock %}
+   
